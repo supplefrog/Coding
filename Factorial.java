@@ -1,5 +1,3 @@
-//Condition for prime: two factors
-//Composite: more than two factors
 import java.util.Scanner;
 import java.lang.Math;
 class Main {
@@ -10,21 +8,13 @@ class Main {
             num = sc.nextInt();
         }
         if (num > 1) {
-            for (int num_minus = num - 1; num_minus > 1;) {
+            for (int num_minus = num - 1; num_minus > 1; num--) {
                 num = num * num_minus;
-                for (;num_minus > 1;) {
-                    num_minus--;
-                    break;    
-                }
             }
         }
         else if (num < -1) {
-            for (int num_plus = num + 1; num_plus <= -1;) {
+            for (int num_plus = num + 1; num_plus <= -1; num_plus++) {
                 num = num * num_plus;
-                for (;num_plus <= -1;) {
-                    num_plus++;
-                    break;    
-                }
             }
         }
         else {
