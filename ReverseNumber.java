@@ -1,13 +1,11 @@
 import java.util.Scanner;
+
 class Main {
     public static void main(String args[]) {
-	//input
         Scanner sc = new Scanner(System.in);
-        int num = 0;
-        if (sc.hasNextInt()) {
-            num = sc.nextInt();
-        }
-	//code
+	System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+	
 	int rem;
         /*
 	int numlen = Integer.valueOf(num).toString().length();
