@@ -4,11 +4,13 @@ import java.util.Scanner;
 import java.lang.Math;
 class Main {
     public static void main(String args[]) {
+	//input
         Scanner sc = new Scanner(System.in);
         int num = 0;
         if (sc.hasNextInt()) {
             num = sc.nextInt();
         }
+	//code
         boolean isPrime = true;
 		for(int i = 2; i <= Math.sqrt(num); i++) {
             if (num % i == 0) {
