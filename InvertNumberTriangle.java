@@ -6,12 +6,11 @@ class Main {
         System.out.print("Enter the max number: ");
         int max = input.nextInt();
 
-        System.out.println();
         for(int line = max; line >= 1; line--) {
+            System.out.println();
             for(int number = line; number >= 1; number--) {
                 System.out.print(number);
             }
-        System.out.println();
         }
     }
 }
