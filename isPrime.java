@@ -1,23 +1,22 @@
-//Condition for prime: two factors
-//Composite: more than two factors
+//Prime - two factors
+//Composite - more than two factors
 import java.util.Scanner;
 import java.lang.Math;
+
 class Main {
     public static void main(String args[]) {
-	//input
         Scanner sc = new Scanner(System.in);
-        int num = 0;
-        if (sc.hasNextInt()) {
-            num = sc.nextInt();
-        }
-	//code
+	System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+
         boolean isPrime = true;
-		for(int i = 2; i <= Math.sqrt(num); i++) {
+	for(int i = 2; i <= Math.sqrt(num); i++) {
             if (num % i == 0) {
                 isPrime = false;
                 break;
             }
         }
+	System.out.println();
         if (num < 0) {
             System.out.println("Number must be natural");
         }
