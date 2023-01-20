@@ -16,7 +16,6 @@ class Main {
                 break;
             }
         }
-	System.out.println();
         if (num < 0) {
             System.out.println("Number must be natural");
         }
