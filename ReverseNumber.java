@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class Main {
-    public static void reverse(num) {
+    public static void reverse(int num) {
     	/*
 	int numlen = Integer.valueOf(num).toString().length();
         for (int i = 1; i <= numlen; i++) {
