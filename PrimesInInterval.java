@@ -24,11 +24,11 @@ class Main {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         int lb = -1, ub = -1;
-        while (lb < 1) {
+        while (lb =< 1) {
             System.out.println("Enter the lower bound (> 1): ");
             lb = sc.nextInt();
         }
-        while (ub < 1) {
+        while (ub =< 1) {
             System.out.println("Enter the upper bound (> 1): ");
             ub = sc.nextInt();
         }
