@@ -15,7 +15,7 @@ class Main {
         return true;
     }
     public static void primesInInterval(int lb, int ub) {
-        for (int n = lb; i <= ub; i++) {
+        for (int n = lb; n <= ub; n++) {
             if (isPrime(n)) {
                 System.out.print(n + " ");
             }
@@ -23,7 +23,7 @@ class Main {
     }
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-        int lb, ub = -1;
+        int lb = -1, ub = -1;
         while (lb < 1) {
             System.out.println("Enter the lower bound (> 1): ");
             lb = sc.nextInt();
