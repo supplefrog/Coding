@@ -33,8 +33,7 @@ class Main {
         int num = sc.nextInt();
         if (isBinary(num)) {
             binToDec(num);
-        }
-        else {
+        } else {
             decToBin(num);
         }
     }
